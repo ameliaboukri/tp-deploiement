@@ -1,7 +1,7 @@
 import os
 import requests
 
-BASE_URL = os.environ.get("BASE_URL", "http://localhost:5000")
+BASE_URL = os.environ.get("BASE_URL", "http://localhost:8000")
 
 def test_app_disponible():
     resp = requests.get(f"{BASE_URL}/health", timeout=5)

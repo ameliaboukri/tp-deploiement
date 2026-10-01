@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t myapp:test .
-      - run: docker run -d -p 5000:5000 --name myapp myapp:test
+      - run: docker run -d -p 8000:8000 --name myapp myapp:test
       - run: sleep 5
       - uses: actions/setup-python@v5
         with:
